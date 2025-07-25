@@ -2,7 +2,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Install ddclient
-RUN apk add ddclient && apk add jq
+RUN apk add ddclient && apk add jq && apk add iproute2
 
 COPY ddclient.conf /etc/ddclient/ddclient.conf
 
