@@ -17,7 +17,7 @@ echo "$DDCLIENT_CONFIG" | while IFS= read -r line; do
     # Append configuration section for this entry
     cat >> "$CONFIG" << EOL
 protocol=cloudflare
-ifv6=enp1s0
+webv6=api6.ipify.org
 zone=${zone}
 ttl=1
 login=token
